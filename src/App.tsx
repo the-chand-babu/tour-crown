@@ -1,36 +1,45 @@
-import  Slider  from "./design-system/slider/index";
-import "./App.scss";
-import Navbarmenu from "./component/header/Header";
-import Header from "./component/header/Header";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from './design-system/Card/index'
-import AboutSection from "./component/about";
+import React, { useEffect } from "react";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Recommend from "./components/Recommend";
+import ScrollToTop from "./components/ScrollToTop";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
 
-function App() {
-  const data = [1,2,3,4,5,6,7,8, 9]
+import scrollreveal from "scrollreveal";
+export default function App() {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: "top",
+      distance: "80px",
+      duration: 2000,
+      reset: true,
+    });
+    sr.reveal(
+      `
+        nav,
+        #hero,
+        #services,
+        #recommend,
+        #testimonials,
+        footer
+        `,
+      {
+        opacity: 0,
+        interval: 300,
+      }
+    );
+  }, []);
   return (
-    <div className="App">
-      <div className="container-fluid p-0">
-    
-        <Navbarmenu />
-        <Slider />
-        <p className="trending-heading">Trending Items</p>
-        <div className="card-section">
-     
-        {
-          data.map((ele)=>{
-            return(
-              <Card />
-            )
-          })
-        }
-     
-      
-        </div>
-        <AboutSection/>
-      </div>
+    <div>
+      <ScrollToTop />
+      <Navbar />
+      <Hero />
+      <Services />
+      <Recommend />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }
-
-export default App;
