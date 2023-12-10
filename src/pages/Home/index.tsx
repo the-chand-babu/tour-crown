@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Footer from "../../components/Footer";
-
 import scrollreveal from "scrollreveal";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
@@ -36,7 +35,7 @@ export const Home =()=>{
 
     return(
         <div>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Navbar />
         <Hero />
         <Services />

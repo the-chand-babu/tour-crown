@@ -1,0 +1,75 @@
+#contact{
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    .contact{
+     
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 98.2vh;
+        background-image: url("https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-1268855.jpg&fm=jpg");
+        .form{
+            // border: 1px solid red;
+            height: 93vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .form-container{
+                // border: 1px solid red;
+                padding: 40px;
+                border-radius: 10px;
+                background-color: #FFFFFF;
+            }
+            p{
+                font-size: 27px;
+                font-weight: 700;
+                margin: 0;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            .text-field{
+                width: 500px;
+               
+            }
+            .btn{
+                width: 150px;
+                font-size: 20px;
+                margin-top: 20px;
+                background-color: rgb(6, 68, 73);
+            }
+        }
+        .contact-details{
+           
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin-top: 200px;
+            padding: 50px 0 ;
+            padding-left: 40px;
+            border-radius: 20px;
+            .info {
+                display: flex;
+                // justify-content: center;
+                gap: 1rem;
+                align-items: center;
+                margin-top: 1rem;
+                // border: 1px solid red;
+                padding: 30px 20px;
+                width: 400px;
+                border-radius: 20px;
+                background-color: #FFFFFF;
+                img {
+                  border-radius: 3rem;
+                  height: 3rem;
+                }
+                .details {
+                  span {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+        }
+    }
+}
