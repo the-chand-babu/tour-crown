@@ -1,0 +1,19 @@
+.category{
+//   display: grid;  
+
+}
+.trending{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.container_input{
+    // border: 1px solid red;
+    height: 100%;
+    /* border: 4px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
