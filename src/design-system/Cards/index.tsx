@@ -4,7 +4,8 @@ import imgaes from '../../assets/images.jpeg'
 
 export const Cards = () => {
   return (
-    <div className="div1">
+
+ <div className="div1">
       <div id="images">
         <img src={imgaes} alt="" />
       </div>
@@ -28,5 +29,8 @@ export const Cards = () => {
         </div>
       </div>
     </div>
-  );
+  
+  
+  
+  ); 
 };

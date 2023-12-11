@@ -41,6 +41,7 @@ const FooterContainer = styled.footer`
   background-color: #d0d8ff;
   border-radius: 0.5rem;
   padding: 2.5rem;
+  
 
   ul {
     display: flex;
